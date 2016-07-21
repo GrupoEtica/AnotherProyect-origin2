@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    tools:context="com.example.isocr.cvas.Fragments.SecondFragment">
+    tools:context="com.example.isocr.cvas.Fragments.SecondFragment"
+    android:backgroundTint="#948e8e">
 
     <!-- TODO: Update blank fragment layout -->
     <ListView
