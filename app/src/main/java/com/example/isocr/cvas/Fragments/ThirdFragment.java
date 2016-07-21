@@ -45,25 +45,21 @@ public class ThirdFragment extends Fragment implements TextToSpeech.OnInitListen
         ListView lista = (ListView)view.findViewById(R.id.lista);
 
         final String[] itemname ={
-                " ",
-                " ",
-                " ",
-                " ",
-                " ",
-                " ",
-                " ",
-                " ",
+                "nesecito ir al baño",
+                "Me duele el estomago",
+                "Presente",
+                "Tomar agua",
+                "Me siento mal",
+
         };
 
         Integer[] imgid={
-                R.drawable.ic_volume_up_black_24dp,
-                R.drawable.ic_volume_up_black_24dp,
-                R.drawable.ic_volume_up_black_24dp,
-                R.drawable.ic_volume_up_black_24dp,
-                R.drawable.ic_volume_up_black_24dp,
-                R.drawable.ic_volume_up_black_24dp,
-                R.drawable.ic_volume_up_black_24dp,
-                R.drawable.ic_volume_up_black_24dp,
+                R.drawable.ir_bano,
+                R.drawable.dolor_estomago,
+                R.drawable.presente,
+                R.drawable.tomar_agua,
+                R.drawable.me_siento_mal,
+
         };
 
         CustomListAdapter adapter=new CustomListAdapter(getActivity(), itemname, imgid);
