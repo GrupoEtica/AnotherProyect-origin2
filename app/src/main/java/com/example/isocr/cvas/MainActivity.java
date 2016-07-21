@@ -1,6 +1,7 @@
 package com.example.isocr.cvas;
 
 import android.app.Application;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -21,6 +22,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
+import android.view.inputmethod.InputMethodManager;
 
 import com.example.isocr.cvas.Fragments.FifthFragment;
 import com.example.isocr.cvas.Fragments.FourthFragment;
@@ -54,11 +56,13 @@ public class MainActivity extends AppCompatActivity
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-               // InputMethodManager imm = (InputMethodManager)
-                //        getSystemService(Context.INPUT_METHOD_SERVICE);
-                //imm.showSoftInput(view, InputMethodManager.SHOW_IMPLICIT);
-                Toast.makeText(MainActivity.this, "Aqui sale teclado", Toast.LENGTH_SHORT).show();
+            public void onClick(View v) {
+
+
+
+                InputMethodManager imm = (InputMethodManager) v.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.toggleSoftInput(InputMethodManager.SHOW_IMPLICIT, 0);
+
             }
         });
 
@@ -88,6 +92,8 @@ public class MainActivity extends AppCompatActivity
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
+
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

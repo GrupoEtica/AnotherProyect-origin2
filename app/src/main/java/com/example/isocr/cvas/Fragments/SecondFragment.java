@@ -52,7 +52,7 @@ public class SecondFragment extends Fragment implements TextToSpeech.OnInitListe
                 "Buenas noches",
                 "Saludos",
                 "Hey",
-                "Todo bn",
+                "Todo bien",
                 "Como estas"
         };
 
