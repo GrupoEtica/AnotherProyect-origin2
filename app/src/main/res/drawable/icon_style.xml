@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- pressed -->
+    <item
+        android:state_pressed="true"
+        android:tint="#3aaced"
+        android:drawable="@drawable/ic_email_black_24dp"
+        />
+
+    <!-- focused -->
+    <item
+        android:state_focused="true"
+        android:tint="#3aaced"
+        android:drawable="@drawable/ic_email_black_24dp"
+        />
+
+    <!-- default -->
+    <item
+        android:tint="@null"
+        android:drawable="@drawable/ic_email_black_24dp"
+        />
+
+</selector>

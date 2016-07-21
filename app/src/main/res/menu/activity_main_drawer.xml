@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/inicio"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:checked="true"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/palabras"
+            android:icon="@drawable/ic_font_download_black_24dp"
+            android:title="Palabras predeterminadas" />
+        <item
+            android:id="@+id/imagenes"
+            android:icon="@drawable/ic_image_black_24dp"
+            android:title="Imagenes predeterminadas" />
+    </group>
+
+        <item android:title="Informacion">
+            <menu>
+                <item
+                    android:id="@+id/ayuda"
+                    android:icon="@drawable/ic_help_black_24dp"
+                    android:title="Ayuda" />
+                <item
+                    android:id="@+id/acerca"
+                    android:icon="@drawable/ic_info_black_24dp"
+                    android:title="Acerca de" />
+            </menu>
+        </item>
+
+    <item android:title="Cuenta">
+        <menu>
+            <item
+                android:id="@+id/infoDeCuenta"
+                android:icon="@drawable/ic_account_circle_black_24dp"
+                android:title="Cuenta" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_power_settings_new_black_24dp"
+                android:title="Cerrar sesion" />
+        </menu>
+    </item>
+
+</menu>
